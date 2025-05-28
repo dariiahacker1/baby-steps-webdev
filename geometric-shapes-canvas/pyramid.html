@@ -1,0 +1,271 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="img/favicon1.ico" rel="icon" type="image/x-icon"/>
+
+<script src="js/pyramid.js" defer></script>
+
+<body class="fon2">
+
+<style>
+
+
+    .pre {
+        position: absolute;
+        display: block;
+        overflow: scroll;
+        width: 750px;
+        height: 420px;
+        background-color: rgba(50, 215, 141, 0.463);
+        bottom: 15%;
+        left: 42%;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgb(62, 106, 240);
+        padding: 20px;
+        line-height: 1.5;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        text-align: left;
+    }
+
+
+    .pre::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .pre::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .pre::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+
+    .pre::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+
+    input[type="range"] {
+
+        margin: 20px;
+    }
+
+
+    #redRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(176, 20, 20, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #redRange::after {
+        content: "red";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #redRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #greenRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(36, 176, 20, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #greenRange::after {
+        content: "green";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #greenRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #blueRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(20, 28, 176, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #blueRange::after {
+        content: "blue";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #blueRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #alphaRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(77, 77, 83, 0.582);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #alphaRange::after {
+        content: "alpha";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #alphaRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+</style>
+
+<form2>
+
+    <h1 class="texth4"> Cross Section Of the Pyramid </h1>
+
+    <canvas id="canvas1" width="520" height="520"
+            style="background-color:#86adad; border: 3px solid #000000; box-shadow: 0px 0px 20px rgb(62, 106, 240); border-radius: 30px; margin:10px;">
+
+    </canvas>
+
+    <div1>
+        <center>
+            <a class="but2" href="sphere.html">
+                <bb2>Back</bb2>
+            </a>
+            <a class="but2" href="index.html">
+                <bb2> Home</bb2>
+            </a>
+            <a class="but2" href="index.html">
+                <bb2> Forward</bb2>
+            </a>
+        </center>
+    </div1>
+
+    <divv>
+
+
+        <input type="range" id="redRange" min="0" max="255" value="39">
+        <input type="range" id="greenRange" min="0" max="255" value="121">
+        <input type="range" id="blueRange" min="0" max="255" value="245">
+        <input type="range" id="alphaRange" min="0" max="1" step="0.01" value="0.6">
+    </divv>
+
+
+    <div class="pre">
+        <h1 class="texth4dop"> rgba fill color editor</h1>
+        <textpir>
+            <commpir> //We get access to the HTML elements that have the identifiers 'redRange', 'greenRange',
+                'blueRange', 'alphaRange' using the document.getElementById() method and store them in the variables
+                redRange, greenRange, blueRange, alphaRange.
+            </commpir>
+
+            <br>var redRange = document.getElementById('redRange');
+            <br>var greenRange = document.getElementById('greenRange');
+            <br>var blueRange = document.getElementById('blueRange');
+            <br>var alphaRange = document.getElementById('alphaRange');
+            <br>
+            <br>
+            <commpir> //We add an input event handler to each element of the range (slider) to respond to changes in
+                of the values in these elements.
+
+            </commpir>
+            <br>redRange.addEventListener('input', changeFillColor);
+            <br>greenRange.addEventListener('input', changeFillColor);
+            <br>blueRange.addEventListener('input', changeFillColor);
+            <br>alphaRange.addEventListener('input', changeFillColor);
+            <br>
+            <br>
+            <commpir> //We create the changeFillColor() function, which is called every time the user changes the value
+                in one of the elements of the range.
+            </commpir>
+            <br>function changeFillColor() {
+            <br> var red = redRange.value;
+            <br> var green = greenRange.value;
+            <br> var blue = blueRange.value;
+            <br> var alpha = alphaRange.value;
+            <br>
+            <br>
+            <commpir>//We create a fillColor string containing a color value in rgba() format with the values that we
+                got from the elements of the range.
+            </commpir>
+            <br>var fillColor = 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')';
+            <br>
+            <br>
+            <commpir>//Set fillColor as a color filler using the fillStyle property of the context
+                drawing ctx.
+
+            </commpir>
+            <br>ctx.fillStyle = fillColor;
+            <br>
+
+            <br>
+            <commpir>//Clear the drawing screen using the clearRect() method of the ctx drawing context. The parameters
+                0, 0
+                indicate the starting position of the clearing, and canvas.width and canvas.height indicate the width
+                and height
+                of the canvas element.
+            </commpir>
+            <br> ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            <br>}
+
+        </textpir>
+    </div>
+
+
+</form2>
+
+
+</body>
+
+
+</html>

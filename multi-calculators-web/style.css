@@ -1,0 +1,422 @@
+h1 {
+  text-align: center;
+}
+
+table {
+
+
+  width: 100%;
+  text-align: center;
+
+}
+
+td {
+  width: 33%;
+  text-align: center;
+
+}
+
+@font-face {
+  font-family: ban;
+  src: url(fonts/KabelC_Medium_Bold.ttf);
+}
+
+@font-face {
+  font-family: beer;
+  src: url(fonts/beer-money12.ttf);
+}
+
+@font-face {
+  font-family: pon;
+  src: url(fonts/appetite-italic\ \(1\).ttf);
+}
+
+
+@font-face {
+  font-family: aboba;
+  src: url(fonts/rostov.ttf);
+}
+
+.fon1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fon.png") 0 0/110% auto no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1px;
+}
+
+
+
+.texth2 {
+  display: block;
+  margin-top: 0px;
+  /* Заголовок */
+  font-family: ban;
+  background-color: #7d786b;
+  color: #a2a5a6;
+  font-size: 55px;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 0px rgb(78, 68, 60);
+  border-radius: 30px;
+  border-width: 4px;
+  border-color: #534f47b5;
+  border-style: solid;
+}
+
+.imgindex {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  display: block;
+  height: 80%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #847f76;
+
+
+}
+
+form1 {
+  border-width: 4px;
+  border-color: #827b6e;
+  border-style: solid;
+  position: absolute;
+  height: 90%;
+  width: 95%;
+  left: 1%;
+  top: 2%;
+  padding: 20px;
+  background-color: rgba(95, 87, 72, 0.774);
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+dopform1 {
+  border-width: 3px;
+  border-color: #7f776a;
+  border-style: solid;
+  position: absolute;
+  height: 68%;
+  width: 53%;
+  left: 42%;
+  top: 18%;
+  padding: 20px;
+  background-color: #3a332b46;
+  box-shadow: 0px 0px 20px rgb(141, 134, 99);
+  border-radius: 20px;
+  text-align: left;
+
+}
+
+.texth2dop {
+  display: block;
+  margin-top: 0px;
+  /* Заголовок */
+  font-family: ban;
+  background-color: #82775a;
+  color: #C1C6C7;
+  font-size: 27px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 0px rgb(48, 76, 128);
+  border-radius: 30px;
+
+}
+
+textkub {
+  font-family: rostov;
+  color: #8992df;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+
+}
+
+commkub {
+  font-family: rostov;
+  color: #6215b0;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+
+
+}
+
+div {
+
+  position: absolute;
+  bottom: 14%;
+  left: 5%;
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2d3436;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+
+  text-align: center;
+  width: 170%;
+  border-radius: 30px;
+  position: relative;
+
+  display: block;
+  color: #a39a81;
+  font-size: 20px;
+  font-family: "ban";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 3px solid #998e72;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn::before {
+  background: #773636;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before {
+  width: 100%;
+}
+
+
+.btn2::before {
+  width: 100%;
+  height: 0%;
+}
+
+.btn2:hover::before {
+  height: 100%;
+}
+
+.btn3::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.btn3:hover::before {
+  height: 380%;
+}
+
+.btn4::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.btn4:hover::before {
+  height: 380%;
+}
+
+/*-------------------------СТРАНИЦА 1----------------------*/
+.textzad1 {
+  /* Заголовок */
+  font-family: beer;
+  background-color: #5d82a8;
+  color: #C1C6C7;
+  font-size: 42px;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px 0px rgb(91, 96, 90);
+  border-radius: 10px;
+  text-align: center;
+  width: 98%;
+  margin-left: 1%;
+}
+
+
+.fonchik1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/v1013-p-0009a.jpg") 0 0/110% auto no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/*-------------------------СТРАНИЦА 1----------------------*/
+
+/*-------------------------СТРАНИЦА 2----------------------*/
+.textzad2 {
+  /* Заголовок */
+  font-family: beer;
+  background-color: #8f8556;
+  color: #C1C6C7;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px 0px rgb(91, 96, 90);
+
+}
+
+
+.fonchik2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/stylish-businessman-working-cafe.jpg") 0 0/110% auto no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/*-------------------------СТРАНИЦА 2----------------------*/
+
+
+/*-------------------------СТРАНИЦА 3----------------------*/
+.textzad3 {
+  /* Заголовок */
+  font-family: beer;
+  background-color: rgb(163, 92, 22);
+  color: #C1C6C7;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px 0px rgb(91, 96, 90);
+
+}
+
+
+.fonchik3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/visa-application-composition-with-american-flag.jpg") 0 0/110% auto no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/*-------------------------СТРАНИЦА 3----------------------*/
+
+/*-------------------------СТРАНИЦА 4----------------------*/
+.textzad4 {
+  /* Заголовок */
+  font-family: beer;
+  background-color: rgba(106, 182, 147, 0.769);
+  color: #C1C6C7;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px 0px rgb(91, 96, 90);
+
+}
+
+
+.fonchik4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/cropped-view-professional-serious-finance-manager-holding-calculator-hands-checking-company-month-s-profits.jpg") 0 0/110% auto no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/*-------------------------СТРАНИЦА 4----------------------*/
+
+
+
+.buttons {
+
+  display: flex;
+  width: 320px;
+  gap: 10px;
+  --b: 5px;
+  /* the border thickness */
+  --h: 1.5em;
+  /* the height */
+}
+
+.buttons button {
+  --_c: #977339;
+  flex: calc(1.25 + var(--_s, 0));
+  min-width: 0;
+  font-size: 40px;
+  font-weight: bold;
+  height: var(--h);
+  cursor: pointer;
+  color: var(--_c);
+  border: var(--b) solid var(--_c);
+  background:
+    conic-gradient(at calc(100% - 1.3*var(--b)) 0, var(--_c) 209deg, #0000 211deg) border-box;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.577*var(--h)) 100%, 0 100%);
+  padding: 0 calc(0.288*var(--h)) 0 0;
+  margin: 0 calc(-0.288*var(--h)) 0 0;
+  box-sizing: border-box;
+  transition: flex .4s;
+}
+
+.buttons button+button {
+  --_c: #b6a07f;
+  flex: calc(.75 + var(--_s, 0));
+  background:
+    conic-gradient(from -90deg at calc(1.3*var(--b)) 100%, var(--_c) 119deg, #0000 121deg) border-box;
+  clip-path: polygon(calc(0.577*var(--h)) 0, 100% 0, 100% 100%, 0 100%);
+  margin: 0 0 0 calc(-0.288*var(--h));
+  padding: 0 0 0 calc(0.288*var(--h));
+}
+
+.buttons button:focus-visible {
+  outline-offset: calc(-2*var(--b));
+  outline: calc(var(--b)/2) solid #000;
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons button:focus-visible+button {
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons button:has(+ button:focus-visible) {
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover,
+button:active:not(:focus-visible) {
+  --_s: .75;
+}
+
+button:active {
+  box-shadow: inset 0 0 0 100vmax var(--_c);
+  color: #fff;
+}

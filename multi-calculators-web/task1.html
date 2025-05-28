@@ -1,0 +1,203 @@
+Ï
+<html>
+<title> Task 1 </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="js/task1.js" defer></script>
+
+<body class="fonchik1">
+<br>
+<h1 class="textzad1"> Program that converts currency from USD to other currencies.
+
+</h1>
+
+<style>
+    #result1 {
+        letter-spacing: 3px;
+        color: rgb(11, 47, 110);
+        font-family: aboba;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    button {
+        letter-spacing: 1px;
+        font-family: pon;
+        padding: 10px 20px;
+        background-color: #7386ae;
+        color: #e3d7b0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #483d34;
+        background-color: #ad9b61;
+        box-shadow: 0 2px 30px rgba(100, 77, 29, 0.516);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    input {
+        font-family: aboba;
+        color: rgb(49, 70, 129);
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid rgb(83, 65, 33);
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #928667;
+        box-shadow: 0px 0px 5px rgb(3, 3, 3);
+
+    }
+
+    label {
+        letter-spacing: 3px;
+        color: #52483a;
+        font-family: pon;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+
+    }
+
+
+    .form1 {
+        width: 620px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #629e98;
+
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        letter-spacing: 3px;
+        color: #0d5086;
+        font-family: pon;
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-shadow: 2px 2px 0px rgb(42, 47, 47);
+
+
+    }
+
+    img {
+        justify-content: center;
+        align-items: center;
+        height: 280px;
+        padding: 0px;
+        border-radius: 10px;
+
+        box-shadow: 1px 1px 20px #000000;
+
+    }
+
+    mainform {
+        display: block;
+        position: absolute;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(117, 111, 95, 0.543);
+        border-style: solid;
+        border-color: #664b33;
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        top: 15%;
+
+    }
+
+    div1 {
+
+        position: absolute;
+        bottom: 3%;
+        left: 39%
+    }
+
+
+    a {
+        color: #b6a07f;
+        text-decoration: none;
+    }
+
+</style>
+
+
+<mainform>
+
+
+    <br>
+    <table>
+        <tr>
+
+            <td><img src="img/DALL·E 2023-04-24 21.42.32 - digital art about currency money.png" alt=""></td>
+
+
+            <td>
+                <form>
+
+                    <label>Select the desired currency:</label>
+                    <input name="currency" list="currency"/>
+                    <datalist id="currency">
+                        <option id="USD" value="GBP"/>
+                        <option id="EUR" value="PLN"/>
+                        <option id="GBP" value="CZK"/>
+                    </datalist>
+
+                    <label>Enter the amount in USD:</label>
+                    <input type="number" id="amount" required>
+
+
+                    <button type="button" onclick="MoneyCount()"> Calculate</button>
+
+
+                </form>
+            </td>
+
+            <td><img src="img/DALL·E 2023-04-24 21.42.40 - digital art about currency money.png" alt=""></td>
+
+
+        </tr>
+    </table>
+
+    <br>
+    <br><br>
+    <form class="form1">
+        <h2> Result: </h2>
+        <span id="result1">   </span>
+    </form>
+
+</mainform>
+
+<br>
+
+
+<center>
+
+
+    <div1 class="buttons">
+        <button><a href="index.html">&laquo;</a></button>
+        <button><a href="task2.html">&raquo;</a></button>
+    </div1>
+
+</center>
+</body>
+</html>

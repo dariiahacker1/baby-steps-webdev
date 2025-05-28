@@ -1,0 +1,834 @@
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+a:hover {
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #F2ED35;
+    transition: 1s;
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+    background-color: #868E9C;
+    color: #52F235;
+}
+
+a:visited {
+    background-color: #868E9C;
+}
+
+a:link {
+    color: #262B38;
+}
+
+
+@font-face {
+    font-family: Contr;
+    src: url(fonts/conthrax-sb.ttf);
+}
+
+
+@font-face {
+    font-family: Propaganda;
+    src: url(fonts/PROPAGAN.ttf);
+}
+
+
+@font-face {
+    font-family: No Signal;
+    src: url(fonts/no-signal.ttf);
+}
+
+@font-face {
+    font-family: TT;
+    src: url(fonts/tt-squares-condensed.ttf);
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(fonts/super-mario-world.ttf);
+}
+
+
+/*--------------------------------------------------------MEEEEEEEEEEEENUUUUUUUUU---------------------------------------------*/
+.tvor {
+    font-family: Propaganda;
+    color: #9EBFF3;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #8455D8,
+    0 -2px 0 #8455D8,
+    -0 2px 0 #8455D8,
+    0 2px 0 #8455D8,
+    -2px -0 0 #8455D8,
+    2px -0 0 #8455D8,
+    -2px 0 0 #8455D8,
+    2px 0 0 #8455D8,
+    -1px -2px 0 #8455D8,
+    1px -2px 0 #8455D8,
+    -1px 2px 0 #8455D8,
+    1px 2px 0 #8455D8,
+    -2px -1px 0 #8455D8,
+    2px -1px 0 #8455D8,
+    -2px 1px 0 #8455D8,
+    2px 1px 0 #8455D8,
+    -2px -2px 0 #8455D8,
+    2px -2px 0 #8455D8,
+    -2px 2px 0 #8455D8,
+    2px 2px 0 #8455D8,
+    -2px -2px 0 #8455D8,
+    2px -2px 0 #8455D8,
+    -2px 2px 0 #8455D8,
+    2px 2px 0 #8455D8;
+}
+
+
+.fonchik1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fonchik1.jpg") 0 0/100% auto no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-line .img1 {
+    height: 390px;
+    padding: 34px;
+    margin-left: 100px;
+
+}
+
+
+.texth1 {
+    font-family: Contr;
+    color: #C1C6C7;
+    font-size: 43px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #4F62B5,
+    0 -2px 0 #4F62B5,
+    -0 2px 0 #4F62B5,
+    0 2px 0 #4F62B5,
+    -2px -0 0 #4F62B5,
+    2px -0 0 #4F62B5,
+    -2px 0 0 #4F62B5,
+    2px 0 0 #4F62B5,
+    -1px -2px 0 #4F62B5,
+    1px -2px 0 #4F62B5,
+    -1px 2px 0 #4F62B5,
+    1px 2px 0 #4F62B5,
+    -2px -1px 0 #4F62B5,
+    2px -1px 0 #4F62B5,
+    -2px 1px 0 #4F62B5,
+    2px 1px 0 #4F62B5,
+    -2px -2px 0 #4F62B5,
+    2px -2px 0 #4F62B5,
+    -2px 2px 0 #4F62B5,
+    2px 2px 0 #4F62B5,
+    -2px -2px 0 #4F62B5,
+    2px -2px 0 #4F62B5,
+    -2px 2px 0 #4F62B5,
+    2px 2px 0 #4F62B5;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+
+}
+
+td {
+    width: 33%;
+    text-align: center;
+
+}
+
+.podpis {
+    font-family: Propaganda;
+    color: #2B0B59;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #589BE9,
+    0 -2px 0 #589BE9,
+    -0 2px 0 #589BE9,
+    0 2px 0 #589BE9,
+    -2px -0 0 #589BE9,
+    2px -0 0 #589BE9,
+    -2px 0 0 #589BE9,
+    2px 0 0 #589BE9,
+    -1px -2px 0 #589BE9,
+    1px -2px 0 #589BE9,
+    -1px 2px 0 #589BE9,
+    1px 2px 0 #589BE9,
+    -2px -1px 0 #589BE9,
+    2px -1px 0 #589BE9,
+    -2px 1px 0 #589BE9,
+    2px 1px 0 #589BE9,
+    -2px -2px 0 #589BE9,
+    2px -2px 0 #589BE9,
+    -2px 2px 0 #589BE9,
+    2px 2px 0 #589BE9,
+    -2px -2px 0 #589BE9,
+    2px -2px 0 #589BE9,
+    -2px 2px 0 #589BE9,
+    2px 2px 0 #589BE9;
+}
+
+
+/*--------------------------------------------------------MEEEEEEEEEEEENUUUUUUUUU ENDING---------------------------------------------*/
+
+/*--------------------------------------------------------MISHKA FREDE---------------------------------------------*/
+.texth3 {
+    background-color: #8744C2;
+    text-transform: capitalize;
+    font-family: Mario;
+    color: #C38DF2;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #536AC2,
+    0 -2px 0 #536AC2,
+    -0 2px 0 #536AC2,
+    0 2px 0 #536AC2,
+    -2px -0 0 #536AC2,
+    2px -0 0 #536AC2,
+    -2px 0 0 #536AC2,
+    2px 0 0 #536AC2,
+    -1px -2px 0 #536AC2,
+    1px -2px 0 #536AC2,
+    -1px 2px 0 #536AC2,
+    1px 2px 0 #536AC2,
+    -2px -1px 0 #536AC2,
+    2px -1px 0 #536AC2,
+    -2px 1px 0 #536AC2,
+    2px 1px 0 #536AC2,
+    -2px -2px 0 #536AC2,
+    2px -2px 0 #536AC2,
+    -2px 2px 0 #536AC2,
+    2px 2px 0 #536AC2,
+    -2px -2px 0 #536AC2,
+    2px -2px 0 #536AC2,
+    -2px 2px 0 #536AC2,
+    2px 2px 0 #536AC2;
+}
+
+.button2 {
+    text-align: center;
+    font-family: Propaganda;
+    color: #5368F3;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-shadow: 1px 2px 2px #F353F3;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+.spisoktext {
+    font-family: TT;
+    color: #AA64EC;
+    font-size: 24px;
+
+}
+
+.fonchik3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fonchik3.jpg") 0 0/100% auto no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.facts {
+    font-style: italic;
+    font-family: TT;
+    color: #CB73C6;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px #5466E3;
+}
+
+.osnovafrede {
+    font-family: Propaganda;
+    color: #546AE3;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+.imgfrede1 {
+    float: right;
+    height: 180px;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #E070EC;
+    margin: 8px 8px 2px 0px;
+
+}
+
+.imgfrede2 {
+    float: left;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #5B5FF4;
+    margin: 8px 6px 2px 0px;
+}
+
+.osnovafrede {
+    font-family: Propaganda;
+    color: #6D4DA6;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+
+/*--------------------------------------------------------MISHKA FREDE ENDING---------------------------------------------*/
+
+
+/*--------------------------------------------------------CHICA ---------------------------------------------*/
+.texth2 {
+    background-color: #466166;
+    text-transform: capitalize;
+    font-family: Mario;
+    color: #466166;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #8BC3CF,
+    0 -2px 0 #8BC3CF,
+    -0 2px 0 #8BC3CF,
+    0 2px 0 #8BC3CF,
+    -2px -0 0 #8BC3CF,
+    2px -0 0 #8BC3CF,
+    -2px 0 0 #8BC3CF,
+    2px 0 0 #8BC3CF,
+    -1px -2px 0 #8BC3CF,
+    1px -2px 0 #8BC3CF,
+    -1px 2px 0 #8BC3CF,
+    1px 2px 0 #8BC3CF,
+    -2px -1px 0 #8BC3CF,
+    2px -1px 0 #8BC3CF,
+    -2px 1px 0 #8BC3CF,
+    2px 1px 0 #8BC3CF,
+    -2px -2px 0 #8BC3CF,
+    2px -2px 0 #8BC3CF,
+    -2px 2px 0 #8BC3CF,
+    2px 2px 0 #8BC3CF,
+    -2px -2px 0 #8BC3CF,
+    2px -2px 0 #8BC3CF,
+    -2px 2px 0 #8BC3CF,
+    2px 2px 0 #8BC3CF;
+}
+
+.imgchica1 {
+    float: left;
+    width: 300;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #48F7A5;
+    margin: 8px 8px 2px 0px;
+
+}
+
+.imgchica2 {
+    float: right;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #48F7A5;
+    margin: 8px 2px 2px 0px;
+
+}
+
+.button1 {
+    text-align: center;
+    font-family: Propaganda;
+    color: #EB7CF4;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #23618D;
+}
+
+.fonchik2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fonchik2.jpg") 0 0/100% auto no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.kursiv {
+    text-align: center;
+    font-family: TT;
+    color: #2B0B59;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-style: italic;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    background-color: #678A91;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #F1F15F;
+}
+
+.osnova {
+    font-family: Propaganda;
+    color: #6D4DA6;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+.border {
+    list-style: none;
+    padding: 0;
+}
+
+.border li {
+    font-family: Propaganda;
+    color: #466166;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #f05d22;
+    box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1),
+    -2px -2px 5px 0 rgba(0, 0, 0, .1),
+    2px 2px 5px 0 rgba(0, 0, 0, .1),
+    -2px 2px 5px 0 rgba(0, 0, 0, .1);
+    transition: 0.3s all linear;
+}
+
+.border li:nth-child(1) {
+    border-color: #493224;
+}
+
+.border li:nth-child(2) {
+    border-color: #8bc63e;
+}
+
+.border li:nth-child(3) {
+    border-color: #fcba30;
+}
+
+.border li:nth-child(4) {
+    border-color: #1ccfc9;
+}
+
+.border li:nth-child(5) {
+    border-color: #493224;
+}
+
+.border li:nth-child(6) {
+    border-color: #8bc63e;
+}
+
+.border li:nth-child(7) {
+    border-color: #fcba30;
+}
+
+.border li:nth-child(8) {
+    border-color: #1ccfc9;
+}
+
+.border li:hover {
+    border-left: 10px solid transparent;
+}
+
+.border li:nth-child(1):hover {
+    border-right: 10px solid #493224;
+}
+
+.border li:nth-child(2):hover {
+    border-right: 10px solid #8bc63e;
+}
+
+.border li:nth-child(3):hover {
+    border-right: 10px solid #fcba30;
+}
+
+.border li:nth-child(4):hover {
+    border-right: 10px solid #1ccfc9;
+}
+
+.border li:nth-child(5):hover {
+    border-right: 10px solid #493224;
+}
+
+.border li:nth-child(6):hover {
+    border-right: 10px solid #8bc63e;
+}
+
+.border li:nth-child(7):hover {
+    border-right: 10px solid #fcba30;
+}
+
+.border li:nth-child(8):hover {
+    border-right: 10px solid #1ccfc9;
+}
+
+.video1 {
+    width: 500px;
+    border: #BB67EA 5px dashed;
+    margin: 5px 5px;
+    float: center;
+}
+
+.chislo {
+    font-family: No Signal;
+    color: #D160C3;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #5048AC,
+    0 -2px 0 #5048AC,
+    -0 2px 0 #5048AC,
+    0 2px 0 #5048AC,
+    -2px -0 0 #5048AC,
+    2px -0 0 #5048AC,
+    -2px 0 0 #5048AC,
+    2px 0 0 #5048AC,
+    -1px -2px 0 #5048AC,
+    1px -2px 0 #5048AC,
+    -1px 2px 0 #5048AC,
+    1px 2px 0 #5048AC,
+    -2px -1px 0 #5048AC,
+    2px -1px 0 #5048AC,
+    -2px 1px 0 #5048AC,
+    2px 1px 0 #5048AC,
+    -2px -2px 0 #5048AC,
+    2px -2px 0 #5048AC,
+    -2px 2px 0 #5048AC,
+    2px 2px 0 #5048AC,
+    -2px -2px 0 #5048AC,
+    2px -2px 0 #5048AC,
+    -2px 2px 0 #5048AC,
+    2px 2px 0 #5048AC;
+}
+
+
+/*--------------------------------------------------------CHICA ENDING---------------------------------------------*/
+
+
+/*--------------------------------------------------------BONNIE---------------------------------------------*/
+.tablichka {
+    border: 1px solid #7F45A8;
+}
+
+.fonchik4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fonchik4.jpg") 0 0/100% auto no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgbon1 {
+    float: left;
+    height: 180px;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #4D59B1;
+    margin: 8px 8px 2px 0px;
+
+}
+
+.imgbon2 {
+    float: right;
+    height: 235px;
+    border-radius: 20px;
+    border: 3px solid #E6E6E6;
+    box-shadow: 1px 1px 20px #3E1BB2;
+    margin: 8px 2px 0px 0px;
+
+}
+
+.texth4 {
+    background-color: #6E7ACD;
+    text-transform: capitalize;
+    font-family: Mario;
+    color: #929DEA;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #7441D0,
+    0 -2px 0 #7441D0,
+    -0 2px 0 #7441D0,
+    0 2px 0 #7441D0,
+    -2px -0 0 #7441D0,
+    2px -0 0 #7441D0,
+    -2px 0 0 #7441D0,
+    2px 0 0 #7441D0,
+    -1px -2px 0 #7441D0,
+    1px -2px 0 #7441D0,
+    -1px 2px 0 #7441D0,
+    1px 2px 0 #7441D0,
+    -2px -1px 0 #7441D0,
+    2px -1px 0 #7441D0,
+    -2px 1px 0 #7441D0,
+    2px 1px 0 #7441D0,
+    -2px -2px 0 #7441D0,
+    2px -2px 0 #7441D0,
+    -2px 2px 0 #7441D0,
+    2px 2px 0 #7441D0,
+    -2px -2px 0 #7441D0,
+    2px -2px 0 #7441D0,
+    -2px 2px 0 #7441D0,
+    2px 2px 0 #7441D0;
+}
+
+.osnovabonnie {
+    font-family: Propaganda;
+    color: #68A5B1;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+.button3 {
+    text-align: center;
+    font-family: Propaganda;
+    color: #9554E8;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #481BBB;
+}
+
+.textspiska {
+    text-align: left;
+    font-family: TT;
+    color: #6335B7;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-style: italic;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px #609FE9;
+}
+
+.pills { /*------SPISOK  BONNIE-------*/
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+    font-family: calibri;
+}
+
+.pills li {
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: 0.75em;
+    padding-left: 1em;
+    background: #9DB2CC;
+}
+
+.pills li:before {
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1.5em;
+    width: 1.875em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: #8C4EC2;
+    border-bottom-left-radius: 70em;
+    border-top-left-radius: 70em;
+    counter-increment: li;
+    content: counter(li);
+}
+
+
+/*--------------------------------------------------------BONNIE ENDING---------------------------------------------*/
+
+
+/*---------------------TVORCHE--------------------*/
+
+.button4 {
+    text-align: center;
+    font-family: Propaganda;
+    color: #96FE9C;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #481BBB;
+}
+
+
+.fonchik5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("img/1666932911_7-7.png") 0 0/100% auto no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.nazva {
+    font-family: Propaganda;
+    color: #A94AEB;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #8BC3CF,
+    0 -2px 0 #8BC3CF,
+    -0 2px 0 #8BC3CF,
+    0 2px 0 #8BC3CF,
+    -2px -0 0 #8BC3CF,
+    2px -0 0 #8BC3CF,
+    -2px 0 0 #8BC3CF,
+    2px 0 0 #8BC3CF,
+    -1px -2px 0 #8BC3CF,
+    1px -2px 0 #8BC3CF,
+    -1px 2px 0 #8BC3CF,
+    1px 2px 0 #8BC3CF,
+    -2px -1px 0 #8BC3CF,
+    2px -1px 0 #8BC3CF,
+    -2px 1px 0 #8BC3CF,
+    2px 1px 0 #8BC3CF,
+    -2px -2px 0 #8BC3CF,
+    2px -2px 0 #8BC3CF,
+    -2px 2px 0 #8BC3CF,
+    2px 2px 0 #8BC3CF,
+    -2px -2px 0 #8BC3CF,
+    2px -2px 0 #8BC3CF,
+    -2px 2px 0 #8BC3CF,
+    2px 2px 0 #8BC3CF;
+
+}
+
+.texth5 {
+    font-family: Propaganda;
+    color: #ABF39E;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: -0 -2px 0 #8455D8,
+    0 -2px 0 #8455D8,
+    -0 2px 0 #8455D8,
+    0 2px 0 #8455D8,
+    -2px -0 0 #8455D8,
+    2px -0 0 #8455D8,
+    -2px 0 0 #8455D8,
+    2px 0 0 #8455D8,
+    -1px -2px 0 #8455D8,
+    1px -2px 0 #8455D8,
+    -1px 2px 0 #8455D8,
+    1px 2px 0 #8455D8,
+    -2px -1px 0 #8455D8,
+    2px -1px 0 #8455D8,
+    -2px 1px 0 #8455D8,
+    2px 1px 0 #8455D8,
+    -2px -2px 0 #8455D8,
+    2px -2px 0 #8455D8,
+    -2px 2px 0 #8455D8,
+    2px 2px 0 #8455D8,
+    -2px -2px 0 #8455D8,
+    2px -2px 0 #8455D8,
+    -2px 2px 0 #8455D8,
+    2px 2px 0 #8455D8;
+}
+
+
+h2 { /* анімований заголовок */
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.fred { /*--------------------EFFECTS---------------*/
+    width: 300;
+    height: 300;
+    width: 33%;
+    height: auto;
+    float: left;
+    max-width: 235px;
+}
+
+.blur {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.brightness {
+    -webkit-filter: brightness(250%);
+    filter: brightness(250%);
+}
+
+.contrast {
+    -webkit-filter: contrast(180%);
+    filter: contrast(180%);
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.huerotate {
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.opacity {
+    -webkit-filter: opacity(50%);
+    filter: opacity(50%);
+}
+
+.saturate {
+    -webkit-filter: saturate(7);
+    filter: saturate(7);
+}
+
+.sepia {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.shadow {
+    -webkit-filter: drop-shadow(8px 8px 10px green);
+    filter: drop-shadow(8px 8px 10px green);
+}
+
+
+/*--------------------TVORCHE ENDING----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

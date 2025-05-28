@@ -1,0 +1,112 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="img/favicon1.ico" rel="icon" type="image/x-icon"/>
+
+<script src="js/sphere.js" defer></script>
+
+<body class="fon3">
+
+
+<form>
+    <h1 class="texth3"> Cross Section Of a Sphere </h1>
+    <canvas id="canvas" width="500" height="500" display="block"
+            style="background-color:#8aacf5; border: 3px solid #000000; box-shadow: 0px 0px 20px rgb(89, 250, 80); border-radius: 30px; margin:10px;">
+
+    </canvas>
+
+    <dopform>
+        <h1 class="texth3dop"> Animation of line color change </h1>
+        <textsphere>
+            <commsphere> // an array of colors used for animation</commsphere>
+            <br> var colors = ['#3357C9',
+            '#5174E3',
+            '#6284EB',
+            '#0585B6',
+            '#24A691',
+            '#242FB3'];
+
+            <br>
+            <commsphere>// a variable indicating the current color index in the colors array
+            </commsphere>
+            <br>var currentColor = 0;
+
+            <br>
+            <commsphere>// the function draws lines on the canvas</commsphere>
+            <br>drawLines();
+
+            <br>
+            <commsphere>// a function that starts an animation</commsphere>
+            <br>function startAnimation() {
+
+            <br>
+            <commsphere>// nested function that changes the color of lines</commsphere>
+            <br>function changeColor() {
+            <br>
+            <commsphere> // change the index to the next color
+            </commsphere>
+            <br>currentColor = (currentColor + 1) % colors.length;
+            <br>
+            <commsphere> // set the following color for the lines</commsphere>
+            <br>ctx.strokeStyle = colors[currentColor] &nbsp; &nbsp;
+            <br>
+            <commsphere> // draw lines with a new color</commsphere>
+            <br>drawLines(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <br>
+            <commsphere> // call the same function after 300 ms
+            </commsphere>
+            <br>setTimeout(changeColor, 300); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <br> }
+            <br>
+            <commsphere> // start the color change</commsphere>
+            <br> changeColor(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <br>}
+
+        </textsphere>
+
+        <dopform2>
+
+            <h1 class="texth5dop"> Gradient fill </h1>
+            <doptextsphere>
+                var gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+
+                <br> gradient.addColorStop(0, '#FBF01AFF');
+
+                <br> gradient.addColorStop(0.5, '#1AFB67FF');
+
+                <br> gradient.addColorStop(1, '#1A43FBFF');
+                <br>
+                <br> ctx.fillStyle = gradient;
+
+                <br> ctx.fill();
+
+                <br> ctx.stroke();
+            </doptextsphere>
+        </dopform2>
+    </dopform>
+
+    <div>
+        <center>
+            <a class="but" href="cube.html">
+                <bb>Back </bb>
+            </a>
+            <a class="but" href="index.html">
+                <bb> Home </bb>
+            </a>
+            <a class="but" href="pyramid.html">
+                <bb> Forward </bb>
+            </a>
+        </center>
+
+    </div>
+
+
+</form>
+<button class="btn" onclick="startAnimation()">
+    <bb> Animation</bb>
+</button>
+
+
+</body>
+</html>

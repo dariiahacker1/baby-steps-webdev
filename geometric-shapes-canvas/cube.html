@@ -1,0 +1,117 @@
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="img/favicon1.ico" rel="icon" type="image/x-icon"/>
+
+<script src="js/cube.js" defer></script>
+
+<body class="fon1">
+
+<style>
+
+
+    input[type="range"] {
+        -webkit-appearance: slider-vertical;
+        margin: 10px 0;
+        background: -webkit-linear-gradient(purple, #e5e5e5);
+
+    }
+
+
+    input[type=range]:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
+
+
+    input {
+        position: absolute;
+        right: 55.5%;
+        top: 38%;
+
+
+    }
+
+
+</style>
+
+<form1>
+    <h1 class="texth2"> Cross Section Of a Cube </h1>
+
+    <canvas id="canvas" width="520" height="480"
+            style="background-color:#919696; border: 3px solid #000000; box-shadow: 0px 0px 20px rgb(240, 62, 216); border-radius: 30px; margin:10px;">
+
+    </canvas>
+
+    <div>
+        <a class="but1" href="index.html">
+            <bb1>Back</bb1>
+        </a>
+        <a class="but1" href="index.html">
+            <bb1> Home</bb1>
+        </a>
+        <a class="but1" href="sphere.html">
+            <bb1> Forward</bb1>
+        </a>
+
+
+    </div>
+
+    <input type="range" id="colorRange" min="0" max="255" value="136">
+
+    <dopform1>
+        <h1 class="texth2dop"> Change the fill color </h1>
+        <textkub>
+            <commkub> // Creating an input element of type range and assigning the id, min, max and value attributes to
+                it
+
+            </commkub>
+            <br> input type="range" id="colorRange" min="0" max="255" value="136"
+            <br>
+            <commkub> //Getting the input element using the document.getElementById() method and assigning it to the
+                to the colorRange variable:
+            </commkub>
+            <br> var colorRange = document.getElementById('colorRange');
+            <br>
+            <commkub>//Adding an input event handler to the input element using the addEventListener() method. When
+                the slider value changes, the drawShape(), bukva(), drawOutline(), drawLines() functions are called,
+                dopLines(), and drawCircles():
+            </commkub>
+            <br> colorRange.addEventListener('input', function() {
+            drawShape();
+            bukva();
+            drawOutline();
+            drawLines();
+            dopLines();
+            drawCircles();
+            });
+            <br>
+            <commkub>//Clearing the entire canvas using the clearRect() method so that when you change the color of the
+                shape fill
+                the previous color does not remain:
+
+            </commkub>
+            <br> ctx.clearRect(0, 0, canvas.width, canvas.height);
+            <br>
+            <commkub> //Creating a fillColor variable that contains a color value for filling shapes.
+            </commkub>
+            <br> var fillColor = 'rgba(' + colorRange.value + ', 64, 216, 0.53)';
+            <br>
+            <commkub> //Setting the fillStyle variable of the ctx canvas context to change the fill color of the shapes
+                on the canvas:Setting the fillStyle variable of the ctx canvas context to change the fill color of the
+                shapes on the canvas:
+
+            </commkub>
+            <br> ctx.fillStyle = fillColor;
+
+
+        </textkub>
+    </dopform1>
+
+
+</form1>
+
+
+</body>
+
+
+</html>
